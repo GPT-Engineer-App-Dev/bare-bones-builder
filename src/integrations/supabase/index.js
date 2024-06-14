@@ -34,7 +34,6 @@ table: comments
 */
 
 // Hooks for events table
-
 export const useEvents = () => useQuery({
     queryKey: ['events'],
     queryFn: () => fromSupabase(supabase.from('events').select('*')),
@@ -76,7 +75,6 @@ export const useDeleteEvent = () => {
 };
 
 // Hooks for comments table
-
 export const useComments = () => useQuery({
     queryKey: ['comments'],
     queryFn: () => fromSupabase(supabase.from('comments').select('*')),
